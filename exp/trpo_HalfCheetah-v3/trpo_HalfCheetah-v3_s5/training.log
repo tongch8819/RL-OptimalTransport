@@ -1,0 +1,1146 @@
+--------------------------------------------------------------------------
+[[17788,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: GCRAZGDL0429
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+[[17846,1],2]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: GCRAZGDL0429
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+Warning: Log dir exp/trpo_HalfCheetah-v3/trpo_HalfCheetah-v3_s5 already exists! Storing info there anyway.
+[32;1mLogging data to exp/trpo_HalfCheetah-v3/trpo_HalfCheetah-v3_s5/progress.txt[0m
+[36;1mSaving config:
+[0m
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            64,
+            64
+        ]
+    },
+    "actor_critic":	"mlp_actor_critic",
+    "algo":	"trpo",
+    "backtrack_coeff":	0.8,
+    "backtrack_iters":	10,
+    "cg_iters":	10,
+    "damping_coeff":	0.1,
+    "delta":	0.01,
+    "env_fn":	"<function <lambda> at 0x7f01f23f24d0>",
+    "epochs":	50,
+    "exp_name":	"trpo_HalfCheetah-v3",
+    "gamma":	0.99,
+    "lam":	0.97,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7f01f239c350>":	{
+            "epoch_dict":	{},
+            "exp_name":	"trpo_HalfCheetah-v3",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"exp/trpo_HalfCheetah-v3/trpo_HalfCheetah-v3_s5",
+            "output_file":	{
+                "<_io.TextIOWrapper name='exp/trpo_HalfCheetah-v3/trpo_HalfCheetah-v3_s5/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"trpo_HalfCheetah-v3",
+        "output_dir":	"exp/trpo_HalfCheetah-v3/trpo_HalfCheetah-v3_s5"
+    },
+    "max_ep_len":	1000,
+    "save_freq":	10,
+    "seed":	5,
+    "steps_per_epoch":	4000,
+    "train_v_iters":	80,
+    "vf_lr":	0.001
+}
+[GCRAZGDL0429:19867] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[GCRAZGDL0429:19867] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[32;1m
+Number of parameters: 	 pi: 5708, 	 v: 5377
+[0m
+2022-04-12 02:42:50.290537: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2022-04-12 02:42:50.361181: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2593990000 Hz
+2022-04-12 02:42:50.362895: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5640e4b640f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-04-12 02:42:50.362928: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2022-04-12 02:42:51.442836: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2022-04-12 02:42:51.520819: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2593990000 Hz
+2022-04-12 02:42:51.525715: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5638110b2310 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-04-12 02:42:51.525826: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2022-04-12 02:42:53.525893: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2022-04-12 02:42:53.581183: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2593990000 Hz
+2022-04-12 02:42:53.582083: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555d9170bc20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-04-12 02:42:53.582107: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2022-04-12 02:42:57.931429: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2022-04-12 02:42:58.009822: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2593990000 Hz
+2022-04-12 02:42:58.010567: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562e54706dd0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-04-12 02:42:58.010667: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               0 |
+|      AverageEpRet |            -605 |
+|          StdEpRet |             164 |
+|          MaxEpRet |            -480 |
+|          MinEpRet |            -884 |
+|             EpLen |           1e+03 |
+|      AverageVVals |        -0.00924 |
+|          StdVVals |            1.25 |
+|          MaxVVals |             2.8 |
+|          MinVVals |           -2.97 |
+| TotalEnvInteracts |           4e+03 |
+|            LossPi |        2.98e-08 |
+|             LossV |        3.44e+03 |
+|       DeltaLossPi |          -0.058 |
+|        DeltaLossV |            -570 |
+|                KL |         0.00885 |
+|    BacktrackIters |               0 |
+|              Time |            32.6 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               1 |
+|      AverageEpRet |            -561 |
+|          StdEpRet |              44 |
+|          MaxEpRet |            -515 |
+|          MinEpRet |            -633 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -8.62 |
+|          StdVVals |            4.03 |
+|          MaxVVals |            8.58 |
+|          MinVVals |           -14.7 |
+| TotalEnvInteracts |           8e+03 |
+|            LossPi |        2.05e-08 |
+|             LossV |        2.06e+03 |
+|       DeltaLossPi |         -0.0581 |
+|        DeltaLossV |            -996 |
+|                KL |         0.00877 |
+|    BacktrackIters |               0 |
+|              Time |            61.8 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               2 |
+|      AverageEpRet |            -573 |
+|          StdEpRet |            35.1 |
+|          MaxEpRet |            -532 |
+|          MinEpRet |            -615 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -12.9 |
+|          StdVVals |              16 |
+|          MaxVVals |            23.2 |
+|          MinVVals |           -23.6 |
+| TotalEnvInteracts |         1.2e+04 |
+|            LossPi |       -7.45e-08 |
+|             LossV |        2.08e+03 |
+|       DeltaLossPi |          -0.061 |
+|        DeltaLossV |       -1.25e+03 |
+|                KL |         0.00876 |
+|    BacktrackIters |               0 |
+|              Time |            89.6 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               3 |
+|      AverageEpRet |            -539 |
+|          StdEpRet |            57.9 |
+|          MaxEpRet |            -471 |
+|          MinEpRet |            -631 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -28.9 |
+|          StdVVals |           0.422 |
+|          MaxVVals |           -23.9 |
+|          MinVVals |           -29.2 |
+| TotalEnvInteracts |         1.6e+04 |
+|            LossPi |        7.45e-09 |
+|             LossV |             803 |
+|       DeltaLossPi |         -0.0626 |
+|        DeltaLossV |            -185 |
+|                KL |          0.0088 |
+|    BacktrackIters |               0 |
+|              Time |             119 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               4 |
+|      AverageEpRet |            -503 |
+|          StdEpRet |            28.8 |
+|          MaxEpRet |            -458 |
+|          MinEpRet |            -533 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -33.8 |
+|          StdVVals |           0.373 |
+|          MaxVVals |           -26.2 |
+|          MinVVals |             -34 |
+| TotalEnvInteracts |           2e+04 |
+|            LossPi |       -1.12e-08 |
+|             LossV |             447 |
+|       DeltaLossPi |         -0.0609 |
+|        DeltaLossV |           -62.7 |
+|                KL |         0.00874 |
+|    BacktrackIters |               0 |
+|              Time |             147 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               5 |
+|      AverageEpRet |            -546 |
+|          StdEpRet |            91.5 |
+|          MaxEpRet |            -433 |
+|          MinEpRet |            -682 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -36.9 |
+|          StdVVals |           0.404 |
+|          MaxVVals |           -23.2 |
+|          MinVVals |             -37 |
+| TotalEnvInteracts |         2.4e+04 |
+|            LossPi |       -4.66e-08 |
+|             LossV |             492 |
+|       DeltaLossPi |         -0.0656 |
+|        DeltaLossV |             -78 |
+|                KL |          0.0088 |
+|    BacktrackIters |               0 |
+|              Time |             176 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               6 |
+|      AverageEpRet |            -633 |
+|          StdEpRet |            28.7 |
+|          MaxEpRet |            -584 |
+|          MinEpRet |            -657 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -40.1 |
+|          StdVVals |            0.78 |
+|          MaxVVals |           -15.6 |
+|          MinVVals |           -40.4 |
+| TotalEnvInteracts |         2.8e+04 |
+|            LossPi |        3.73e-09 |
+|             LossV |             646 |
+|       DeltaLossPi |         -0.0601 |
+|        DeltaLossV |            -112 |
+|                KL |         0.00871 |
+|    BacktrackIters |               0 |
+|              Time |             205 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               7 |
+|      AverageEpRet |            -558 |
+|          StdEpRet |              46 |
+|          MaxEpRet |            -485 |
+|          MinEpRet |            -605 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -44.3 |
+|          StdVVals |           0.277 |
+|          MaxVVals |           -38.2 |
+|          MinVVals |           -44.4 |
+| TotalEnvInteracts |         3.2e+04 |
+|            LossPi |        1.86e-08 |
+|             LossV |             360 |
+|       DeltaLossPi |         -0.0663 |
+|        DeltaLossV |           -15.3 |
+|                KL |         0.00875 |
+|    BacktrackIters |               0 |
+|              Time |             234 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               8 |
+|      AverageEpRet |            -535 |
+|          StdEpRet |            72.2 |
+|          MaxEpRet |            -430 |
+|          MinEpRet |            -616 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -45.9 |
+|          StdVVals |           0.838 |
+|          MaxVVals |           -23.4 |
+|          MinVVals |           -46.1 |
+| TotalEnvInteracts |         3.6e+04 |
+|            LossPi |       -5.59e-09 |
+|             LossV |             326 |
+|       DeltaLossPi |         -0.0632 |
+|        DeltaLossV |           -6.23 |
+|                KL |         0.00871 |
+|    BacktrackIters |               0 |
+|              Time |             262 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               9 |
+|      AverageEpRet |            -549 |
+|          StdEpRet |            52.2 |
+|          MaxEpRet |            -484 |
+|          MinEpRet |            -612 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -46.9 |
+|          StdVVals |           0.294 |
+|          MaxVVals |           -41.4 |
+|          MinVVals |             -47 |
+| TotalEnvInteracts |           4e+04 |
+|            LossPi |       -3.73e-09 |
+|             LossV |             402 |
+|       DeltaLossPi |         -0.0592 |
+|        DeltaLossV |           -1.69 |
+|                KL |         0.00874 |
+|    BacktrackIters |               0 |
+|              Time |             292 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              10 |
+|      AverageEpRet |            -534 |
+|          StdEpRet |            51.3 |
+|          MaxEpRet |            -490 |
+|          MinEpRet |            -620 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -47.4 |
+|          StdVVals |           0.707 |
+|          MaxVVals |           -23.4 |
+|          MinVVals |           -47.5 |
+| TotalEnvInteracts |         4.4e+04 |
+|            LossPi |       -2.98e-08 |
+|             LossV |             250 |
+|       DeltaLossPi |         -0.0657 |
+|        DeltaLossV |           -1.58 |
+|                KL |         0.00874 |
+|    BacktrackIters |               0 |
+|              Time |             321 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              11 |
+|      AverageEpRet |            -479 |
+|          StdEpRet |            19.8 |
+|          MaxEpRet |            -454 |
+|          MinEpRet |            -502 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -47.4 |
+|          StdVVals |            1.19 |
+|          MaxVVals |            3.69 |
+|          MinVVals |           -47.6 |
+| TotalEnvInteracts |         4.8e+04 |
+|            LossPi |       -3.73e-09 |
+|             LossV |             339 |
+|       DeltaLossPi |         -0.0647 |
+|        DeltaLossV |           -24.5 |
+|                KL |         0.00872 |
+|    BacktrackIters |               0 |
+|              Time |             346 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              12 |
+|      AverageEpRet |            -502 |
+|          StdEpRet |            82.5 |
+|          MaxEpRet |            -395 |
+|          MinEpRet |            -600 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -45.4 |
+|          StdVVals |            4.05 |
+|          MaxVVals |            26.7 |
+|          MinVVals |           -46.4 |
+| TotalEnvInteracts |         5.2e+04 |
+|            LossPi |       -2.98e-08 |
+|             LossV |             323 |
+|       DeltaLossPi |         -0.0657 |
+|        DeltaLossV |           -20.5 |
+|                KL |         0.00868 |
+|    BacktrackIters |               0 |
+|              Time |             374 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              13 |
+|      AverageEpRet |            -592 |
+|          StdEpRet |            60.1 |
+|          MaxEpRet |            -507 |
+|          MinEpRet |            -656 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -46.2 |
+|          StdVVals |           0.677 |
+|          MaxVVals |           -31.6 |
+|          MinVVals |           -46.4 |
+| TotalEnvInteracts |         5.6e+04 |
+|            LossPi |               0 |
+|             LossV |             382 |
+|       DeltaLossPi |         -0.0662 |
+|        DeltaLossV |           -33.9 |
+|                KL |         0.00872 |
+|    BacktrackIters |               0 |
+|              Time |             396 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              14 |
+|      AverageEpRet |            -518 |
+|          StdEpRet |            54.9 |
+|          MaxEpRet |            -435 |
+|          MinEpRet |            -570 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -48.3 |
+|          StdVVals |            3.32 |
+|          MaxVVals |            13.7 |
+|          MinVVals |           -49.1 |
+| TotalEnvInteracts |           6e+04 |
+|            LossPi |        1.86e-09 |
+|             LossV |             334 |
+|       DeltaLossPi |         -0.0641 |
+|        DeltaLossV |             -14 |
+|                KL |         0.00883 |
+|    BacktrackIters |               0 |
+|              Time |             417 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              15 |
+|      AverageEpRet |            -615 |
+|          StdEpRet |            92.7 |
+|          MaxEpRet |            -533 |
+|          MinEpRet |            -769 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -47.8 |
+|          StdVVals |            2.33 |
+|          MaxVVals |            -1.5 |
+|          MinVVals |           -48.6 |
+| TotalEnvInteracts |         6.4e+04 |
+|            LossPi |       -1.49e-08 |
+|             LossV |             581 |
+|       DeltaLossPi |         -0.0595 |
+|        DeltaLossV |           -22.8 |
+|                KL |         0.00874 |
+|    BacktrackIters |               0 |
+|              Time |             435 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              16 |
+|      AverageEpRet |            -531 |
+|          StdEpRet |             117 |
+|          MaxEpRet |            -360 |
+|          MinEpRet |            -689 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -49.6 |
+|          StdVVals |            2.49 |
+|          MaxVVals |           -12.5 |
+|          MinVVals |           -50.5 |
+| TotalEnvInteracts |         6.8e+04 |
+|            LossPi |        2.98e-08 |
+|             LossV |             379 |
+|       DeltaLossPi |         -0.0644 |
+|        DeltaLossV |           -26.3 |
+|                KL |         0.00872 |
+|    BacktrackIters |               0 |
+|              Time |             456 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              17 |
+|      AverageEpRet |            -476 |
+|          StdEpRet |            73.9 |
+|          MaxEpRet |            -376 |
+|          MinEpRet |            -584 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -47.7 |
+|          StdVVals |            5.66 |
+|          MaxVVals |           -9.59 |
+|          MinVVals |           -50.6 |
+| TotalEnvInteracts |         7.2e+04 |
+|            LossPi |        2.24e-08 |
+|             LossV |             289 |
+|       DeltaLossPi |         -0.0659 |
+|        DeltaLossV |           -73.6 |
+|                KL |         0.00872 |
+|    BacktrackIters |               0 |
+|              Time |             484 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              18 |
+|      AverageEpRet |            -504 |
+|          StdEpRet |            24.9 |
+|          MaxEpRet |            -470 |
+|          MinEpRet |            -540 |
+|             EpLen |           1e+03 |
+|      AverageVVals |             -43 |
+|          StdVVals |             4.7 |
+|          MaxVVals |            8.44 |
+|          MinVVals |           -48.7 |
+| TotalEnvInteracts |         7.6e+04 |
+|            LossPi |       -3.73e-09 |
+|             LossV |             250 |
+|       DeltaLossPi |         -0.0633 |
+|        DeltaLossV |           -32.9 |
+|                KL |          0.0087 |
+|    BacktrackIters |               0 |
+|              Time |             513 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              19 |
+|      AverageEpRet |            -531 |
+|          StdEpRet |            53.1 |
+|          MaxEpRet |            -465 |
+|          MinEpRet |            -595 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -43.7 |
+|          StdVVals |            3.32 |
+|          MaxVVals |           -20.1 |
+|          MinVVals |           -48.7 |
+| TotalEnvInteracts |           8e+04 |
+|            LossPi |        2.98e-08 |
+|             LossV |             356 |
+|       DeltaLossPi |         -0.0618 |
+|        DeltaLossV |           -38.6 |
+|                KL |         0.00872 |
+|    BacktrackIters |               0 |
+|              Time |             536 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              20 |
+|      AverageEpRet |            -479 |
+|          StdEpRet |            48.8 |
+|          MaxEpRet |            -400 |
+|          MinEpRet |            -529 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -43.9 |
+|          StdVVals |            4.76 |
+|          MaxVVals |           -6.21 |
+|          MinVVals |           -50.3 |
+| TotalEnvInteracts |         8.4e+04 |
+|            LossPi |        2.24e-08 |
+|             LossV |             241 |
+|       DeltaLossPi |          -0.066 |
+|        DeltaLossV |           -26.2 |
+|                KL |         0.00882 |
+|    BacktrackIters |               0 |
+|              Time |             566 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              21 |
+|      AverageEpRet |            -498 |
+|          StdEpRet |            49.3 |
+|          MaxEpRet |            -451 |
+|          MinEpRet |            -569 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -42.1 |
+|          StdVVals |            4.89 |
+|          MaxVVals |            4.26 |
+|          MinVVals |           -49.7 |
+| TotalEnvInteracts |         8.8e+04 |
+|            LossPi |         2.7e-08 |
+|             LossV |             385 |
+|       DeltaLossPi |         -0.0621 |
+|        DeltaLossV |             -32 |
+|                KL |         0.00874 |
+|    BacktrackIters |               0 |
+|              Time |             589 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              22 |
+|      AverageEpRet |            -503 |
+|          StdEpRet |            92.1 |
+|          MaxEpRet |            -388 |
+|          MinEpRet |            -640 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -44.2 |
+|          StdVVals |             5.7 |
+|          MaxVVals |            27.5 |
+|          MinVVals |           -50.6 |
+| TotalEnvInteracts |         9.2e+04 |
+|            LossPi |        4.47e-08 |
+|             LossV |             346 |
+|       DeltaLossPi |         -0.0636 |
+|        DeltaLossV |           -37.4 |
+|                KL |         0.00873 |
+|    BacktrackIters |               0 |
+|              Time |             617 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              23 |
+|      AverageEpRet |            -437 |
+|          StdEpRet |            69.6 |
+|          MaxEpRet |            -376 |
+|          MinEpRet |            -551 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -40.9 |
+|          StdVVals |            4.58 |
+|          MaxVVals |            4.11 |
+|          MinVVals |           -51.7 |
+| TotalEnvInteracts |         9.6e+04 |
+|            LossPi |       -3.73e-09 |
+|             LossV |             207 |
+|       DeltaLossPi |         -0.0648 |
+|        DeltaLossV |           -49.4 |
+|                KL |         0.00873 |
+|    BacktrackIters |               0 |
+|              Time |             646 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              24 |
+|      AverageEpRet |            -475 |
+|          StdEpRet |            53.4 |
+|          MaxEpRet |            -393 |
+|          MinEpRet |            -543 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -36.5 |
+|          StdVVals |            11.1 |
+|          MaxVVals |            31.4 |
+|          MinVVals |           -51.3 |
+| TotalEnvInteracts |           1e+05 |
+|            LossPi |       -1.49e-08 |
+|             LossV |             433 |
+|       DeltaLossPi |         -0.0579 |
+|        DeltaLossV |            -176 |
+|                KL |         0.00874 |
+|    BacktrackIters |               0 |
+|              Time |             668 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              25 |
+|      AverageEpRet |            -468 |
+|          StdEpRet |            55.7 |
+|          MaxEpRet |            -416 |
+|          MinEpRet |            -562 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -40.1 |
+|          StdVVals |            5.12 |
+|          MaxVVals |             -11 |
+|          MinVVals |           -51.4 |
+| TotalEnvInteracts |        1.04e+05 |
+|            LossPi |       -2.61e-08 |
+|             LossV |             286 |
+|       DeltaLossPi |         -0.0615 |
+|        DeltaLossV |           -28.6 |
+|                KL |         0.00874 |
+|    BacktrackIters |               0 |
+|              Time |             696 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              26 |
+|      AverageEpRet |            -390 |
+|          StdEpRet |            48.8 |
+|          MaxEpRet |            -327 |
+|          MinEpRet |            -439 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -40.9 |
+|          StdVVals |            4.21 |
+|          MaxVVals |           -12.3 |
+|          MinVVals |           -52.6 |
+| TotalEnvInteracts |        1.08e+05 |
+|            LossPi |       -2.33e-08 |
+|             LossV |             310 |
+|       DeltaLossPi |          -0.063 |
+|        DeltaLossV |             -58 |
+|                KL |          0.0087 |
+|    BacktrackIters |               0 |
+|              Time |             717 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              27 |
+|      AverageEpRet |            -472 |
+|          StdEpRet |            48.7 |
+|          MaxEpRet |            -418 |
+|          MinEpRet |            -530 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -37.2 |
+|          StdVVals |               7 |
+|          MaxVVals |             9.8 |
+|          MinVVals |           -51.8 |
+| TotalEnvInteracts |        1.12e+05 |
+|            LossPi |        2.24e-08 |
+|             LossV |             244 |
+|       DeltaLossPi |         -0.0611 |
+|        DeltaLossV |           -72.7 |
+|                KL |         0.00877 |
+|    BacktrackIters |               0 |
+|              Time |             746 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              28 |
+|      AverageEpRet |            -482 |
+|          StdEpRet |            93.4 |
+|          MaxEpRet |            -414 |
+|          MinEpRet |            -643 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -40.2 |
+|          StdVVals |            6.24 |
+|          MaxVVals |           -4.24 |
+|          MinVVals |           -52.9 |
+| TotalEnvInteracts |        1.16e+05 |
+|            LossPi |        3.73e-09 |
+|             LossV |             334 |
+|       DeltaLossPi |         -0.0631 |
+|        DeltaLossV |           -47.2 |
+|                KL |         0.00879 |
+|    BacktrackIters |               0 |
+|              Time |             772 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              29 |
+|      AverageEpRet |            -445 |
+|          StdEpRet |            69.4 |
+|          MaxEpRet |            -374 |
+|          MinEpRet |            -560 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -45.5 |
+|          StdVVals |            5.51 |
+|          MaxVVals |           -27.1 |
+|          MinVVals |           -54.1 |
+| TotalEnvInteracts |         1.2e+05 |
+|            LossPi |       -7.45e-09 |
+|             LossV |             280 |
+|       DeltaLossPi |         -0.0641 |
+|        DeltaLossV |           -47.8 |
+|                KL |         0.00873 |
+|    BacktrackIters |               0 |
+|              Time |             794 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              30 |
+|      AverageEpRet |            -436 |
+|          StdEpRet |            18.3 |
+|          MaxEpRet |            -413 |
+|          MinEpRet |            -464 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -39.9 |
+|          StdVVals |            6.55 |
+|          MaxVVals |            1.67 |
+|          MinVVals |           -52.6 |
+| TotalEnvInteracts |        1.24e+05 |
+|            LossPi |        9.31e-09 |
+|             LossV |             257 |
+|       DeltaLossPi |         -0.0628 |
+|        DeltaLossV |           -42.6 |
+|                KL |         0.00888 |
+|    BacktrackIters |               0 |
+|              Time |             817 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              31 |
+|      AverageEpRet |            -572 |
+|          StdEpRet |             181 |
+|          MaxEpRet |            -394 |
+|          MinEpRet |            -825 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -37.9 |
+|          StdVVals |            5.85 |
+|          MaxVVals |              -8 |
+|          MinVVals |           -51.8 |
+| TotalEnvInteracts |        1.28e+05 |
+|            LossPi |       -1.49e-08 |
+|             LossV |             802 |
+|       DeltaLossPi |         -0.0579 |
+|        DeltaLossV |            -269 |
+|                KL |         0.00867 |
+|    BacktrackIters |               0 |
+|              Time |             845 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              32 |
+|      AverageEpRet |            -514 |
+|          StdEpRet |             101 |
+|          MaxEpRet |            -419 |
+|          MinEpRet |            -674 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -50.8 |
+|          StdVVals |            7.91 |
+|          MaxVVals |           -12.9 |
+|          MinVVals |           -57.5 |
+| TotalEnvInteracts |        1.32e+05 |
+|            LossPi |               0 |
+|             LossV |             365 |
+|       DeltaLossPi |         -0.0649 |
+|        DeltaLossV |           -39.5 |
+|                KL |         0.00876 |
+|    BacktrackIters |               0 |
+|              Time |             869 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              33 |
+|      AverageEpRet |            -409 |
+|          StdEpRet |            25.6 |
+|          MaxEpRet |            -367 |
+|          MinEpRet |            -434 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -42.1 |
+|          StdVVals |            7.57 |
+|          MaxVVals |           -6.54 |
+|          MinVVals |           -57.4 |
+| TotalEnvInteracts |        1.36e+05 |
+|            LossPi |       -3.54e-08 |
+|             LossV |             347 |
+|       DeltaLossPi |         -0.0652 |
+|        DeltaLossV |            -105 |
+|                KL |         0.00887 |
+|    BacktrackIters |               0 |
+|              Time |             896 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              34 |
+|      AverageEpRet |            -471 |
+|          StdEpRet |             106 |
+|          MaxEpRet |            -349 |
+|          MinEpRet |            -603 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -35.7 |
+|          StdVVals |            11.9 |
+|          MaxVVals |            25.6 |
+|          MinVVals |           -56.5 |
+| TotalEnvInteracts |         1.4e+05 |
+|            LossPi |       -1.49e-08 |
+|             LossV |             456 |
+|       DeltaLossPi |         -0.0602 |
+|        DeltaLossV |            -163 |
+|                KL |         0.00893 |
+|    BacktrackIters |               0 |
+|              Time |             920 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              35 |
+|      AverageEpRet |            -443 |
+|          StdEpRet |              60 |
+|          MaxEpRet |            -385 |
+|          MinEpRet |            -542 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -41.2 |
+|          StdVVals |            6.13 |
+|          MaxVVals |            4.58 |
+|          MinVVals |           -57.5 |
+| TotalEnvInteracts |        1.44e+05 |
+|            LossPi |       -7.45e-09 |
+|             LossV |             234 |
+|       DeltaLossPi |         -0.0628 |
+|        DeltaLossV |             -31 |
+|                KL |         0.00875 |
+|    BacktrackIters |               0 |
+|              Time |             940 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              36 |
+|      AverageEpRet |            -440 |
+|          StdEpRet |            62.4 |
+|          MaxEpRet |            -367 |
+|          MinEpRet |            -535 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -40.4 |
+|          StdVVals |            6.99 |
+|          MaxVVals |              21 |
+|          MinVVals |           -57.2 |
+| TotalEnvInteracts |        1.48e+05 |
+|            LossPi |        1.86e-08 |
+|             LossV |             152 |
+|       DeltaLossPi |         -0.0591 |
+|        DeltaLossV |           -18.2 |
+|                KL |         0.00881 |
+|    BacktrackIters |               0 |
+|              Time |             968 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              37 |
+|      AverageEpRet |            -394 |
+|          StdEpRet |            38.6 |
+|          MaxEpRet |            -339 |
+|          MinEpRet |            -441 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -39.8 |
+|          StdVVals |            5.17 |
+|          MaxVVals |           -15.4 |
+|          MinVVals |           -56.6 |
+| TotalEnvInteracts |        1.52e+05 |
+|            LossPi |       -7.45e-09 |
+|             LossV |             196 |
+|       DeltaLossPi |         -0.0619 |
+|        DeltaLossV |           -54.2 |
+|                KL |         0.00881 |
+|    BacktrackIters |               0 |
+|              Time |             991 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              38 |
+|      AverageEpRet |            -502 |
+|          StdEpRet |            89.3 |
+|          MaxEpRet |            -392 |
+|          MinEpRet |            -614 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -34.8 |
+|          StdVVals |             8.2 |
+|          MaxVVals |             5.1 |
+|          MinVVals |           -53.6 |
+| TotalEnvInteracts |        1.56e+05 |
+|            LossPi |       -1.12e-08 |
+|             LossV |             400 |
+|       DeltaLossPi |         -0.0624 |
+|        DeltaLossV |            -185 |
+|                KL |         0.00878 |
+|    BacktrackIters |               0 |
+|              Time |        1.01e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              39 |
+|      AverageEpRet |            -395 |
+|          StdEpRet |            39.1 |
+|          MaxEpRet |            -349 |
+|          MinEpRet |            -451 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -38.1 |
+|          StdVVals |            5.58 |
+|          MaxVVals |           -15.1 |
+|          MinVVals |           -57.3 |
+| TotalEnvInteracts |         1.6e+05 |
+|            LossPi |       -3.73e-09 |
+|             LossV |             163 |
+|       DeltaLossPi |         -0.0669 |
+|        DeltaLossV |           -31.6 |
+|                KL |         0.00892 |
+|    BacktrackIters |               0 |
+|              Time |        1.03e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              40 |
+|      AverageEpRet |            -427 |
+|          StdEpRet |              51 |
+|          MaxEpRet |            -343 |
+|          MinEpRet |            -480 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -38.3 |
+|          StdVVals |            7.15 |
+|          MaxVVals |            24.4 |
+|          MinVVals |           -56.1 |
+| TotalEnvInteracts |        1.64e+05 |
+|            LossPi |        7.45e-09 |
+|             LossV |             370 |
+|       DeltaLossPi |         -0.0623 |
+|        DeltaLossV |           -51.1 |
+|                KL |         0.00869 |
+|    BacktrackIters |               0 |
+|              Time |        1.06e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              41 |
+|      AverageEpRet |            -392 |
+|          StdEpRet |            84.3 |
+|          MaxEpRet |            -329 |
+|          MinEpRet |            -536 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -35.9 |
+|          StdVVals |            6.17 |
+|          MaxVVals |            8.42 |
+|          MinVVals |           -55.6 |
+| TotalEnvInteracts |        1.68e+05 |
+|            LossPi |        3.73e-09 |
+|             LossV |             235 |
+|       DeltaLossPi |         -0.0636 |
+|        DeltaLossV |           -35.8 |
+|                KL |         0.00874 |
+|    BacktrackIters |               0 |
+|              Time |        1.09e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              42 |
+|      AverageEpRet |            -366 |
+|          StdEpRet |            16.3 |
+|          MaxEpRet |            -350 |
+|          MinEpRet |            -394 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -34.5 |
+|          StdVVals |            6.68 |
+|          MaxVVals |            21.8 |
+|          MinVVals |           -55.8 |
+| TotalEnvInteracts |        1.72e+05 |
+|            LossPi |       -9.31e-09 |
+|             LossV |             120 |
+|       DeltaLossPi |          -0.058 |
+|        DeltaLossV |           -37.2 |
+|                KL |         0.00877 |
+|    BacktrackIters |               0 |
+|              Time |        1.11e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              43 |
+|      AverageEpRet |            -492 |
+|          StdEpRet |              52 |
+|          MaxEpRet |            -412 |
+|          MinEpRet |            -557 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -36.2 |
+|          StdVVals |            6.94 |
+|          MaxVVals |            13.8 |
+|          MinVVals |           -54.7 |
+| TotalEnvInteracts |        1.76e+05 |
+|            LossPi |         1.3e-08 |
+|             LossV |             391 |
+|       DeltaLossPi |         -0.0619 |
+|        DeltaLossV |            -134 |
+|                KL |         0.00882 |
+|    BacktrackIters |               0 |
+|              Time |        1.13e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              44 |
+|      AverageEpRet |            -318 |
+|          StdEpRet |            54.9 |
+|          MaxEpRet |            -244 |
+|          MinEpRet |            -397 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -37.1 |
+|          StdVVals |            8.33 |
+|          MaxVVals |           -15.8 |
+|          MinVVals |           -58.5 |
+| TotalEnvInteracts |         1.8e+05 |
+|            LossPi |       -7.45e-09 |
+|             LossV |             372 |
+|       DeltaLossPi |          -0.061 |
+|        DeltaLossV |            -207 |
+|                KL |         0.00872 |
+|    BacktrackIters |               0 |
+|              Time |        1.15e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              45 |
+|      AverageEpRet |            -486 |
+|          StdEpRet |            83.6 |
+|          MaxEpRet |            -349 |
+|          MinEpRet |            -569 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -30.2 |
+|          StdVVals |            7.21 |
+|          MaxVVals |            24.5 |
+|          MinVVals |           -55.2 |
+| TotalEnvInteracts |        1.84e+05 |
+|            LossPi |       -7.45e-09 |
+|             LossV |             599 |
+|       DeltaLossPi |         -0.0605 |
+|        DeltaLossV |            -328 |
+|                KL |         0.00889 |
+|    BacktrackIters |               0 |
+|              Time |        1.17e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              46 |
+|      AverageEpRet |            -428 |
+|          StdEpRet |            49.1 |
+|          MaxEpRet |            -370 |
+|          MinEpRet |            -491 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -36.9 |
+|          StdVVals |            8.99 |
+|          MaxVVals |           -16.6 |
+|          MinVVals |           -59.5 |
+| TotalEnvInteracts |        1.88e+05 |
+|            LossPi |        3.73e-09 |
+|             LossV |             195 |
+|       DeltaLossPi |         -0.0615 |
+|        DeltaLossV |           -23.4 |
+|                KL |         0.00886 |
+|    BacktrackIters |               0 |
+|              Time |        1.19e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              47 |
+|      AverageEpRet |            -432 |
+|          StdEpRet |            76.7 |
+|          MaxEpRet |            -344 |
+|          MinEpRet |            -551 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -38.1 |
+|          StdVVals |            8.07 |
+|          MaxVVals |            6.89 |
+|          MinVVals |           -59.7 |
+| TotalEnvInteracts |        1.92e+05 |
+|            LossPi |        2.61e-08 |
+|             LossV |             273 |
+|       DeltaLossPi |         -0.0601 |
+|        DeltaLossV |           -26.3 |
+|                KL |         0.00885 |
+|    BacktrackIters |               0 |
+|              Time |        1.21e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              48 |
+|      AverageEpRet |            -397 |
+|          StdEpRet |            33.4 |
+|          MaxEpRet |            -356 |
+|          MinEpRet |            -447 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -35.9 |
+|          StdVVals |            6.35 |
+|          MaxVVals |            26.2 |
+|          MinVVals |           -59.9 |
+| TotalEnvInteracts |        1.96e+05 |
+|            LossPi |        -1.4e-08 |
+|             LossV |             105 |
+|       DeltaLossPi |         -0.0619 |
+|        DeltaLossV |           -22.1 |
+|                KL |         0.00899 |
+|    BacktrackIters |               0 |
+|              Time |        1.23e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              49 |
+|      AverageEpRet |            -422 |
+|          StdEpRet |            72.2 |
+|          MaxEpRet |            -334 |
+|          MinEpRet |            -522 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           -37.8 |
+|          StdVVals |            6.83 |
+|          MaxVVals |            41.1 |
+|          MinVVals |           -59.4 |
+| TotalEnvInteracts |           2e+05 |
+|            LossPi |        1.49e-08 |
+|             LossV |             227 |
+|       DeltaLossPi |         -0.0624 |
+|        DeltaLossV |           -26.2 |
+|                KL |         0.00878 |
+|    BacktrackIters |               0 |
+|              Time |        1.23e+03 |
+---------------------------------------

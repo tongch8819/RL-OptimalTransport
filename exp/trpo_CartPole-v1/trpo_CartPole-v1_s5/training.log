@@ -1,0 +1,1244 @@
+--------------------------------------------------------------------------
+[[16421,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: GCRAZGDL0429
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+[[16397,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: GCRAZGDL0429
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+Warning: Log dir exp/trpo_CartPole-v1/trpo_CartPole-v1_s5 already exists! Storing info there anyway.
+[32;1mLogging data to exp/trpo_CartPole-v1/trpo_CartPole-v1_s5/progress.txt[0m
+[36;1mSaving config:
+[0m
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            64,
+            64
+        ]
+    },
+    "actor_critic":	"mlp_actor_critic",
+    "algo":	"trpo",
+    "backtrack_coeff":	0.8,
+    "backtrack_iters":	10,
+    "cg_iters":	10,
+    "damping_coeff":	0.1,
+    "delta":	0.01,
+    "env_fn":	"<function <lambda> at 0x7f62c2e1b4d0>",
+    "epochs":	50,
+    "exp_name":	"trpo_CartPole-v1",
+    "gamma":	0.99,
+    "lam":	0.97,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7f62c2dc5490>":	{
+            "epoch_dict":	{},
+            "exp_name":	"trpo_CartPole-v1",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"exp/trpo_CartPole-v1/trpo_CartPole-v1_s5",
+            "output_file":	{
+                "<_io.TextIOWrapper name='exp/trpo_CartPole-v1/trpo_CartPole-v1_s5/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"trpo_CartPole-v1",
+        "output_dir":	"exp/trpo_CartPole-v1/trpo_CartPole-v1_s5"
+    },
+    "max_ep_len":	1000,
+    "save_freq":	10,
+    "seed":	5,
+    "steps_per_epoch":	4000,
+    "train_v_iters":	80,
+    "vf_lr":	0.001
+}
+[32;1m
+Number of parameters: 	 pi: 4610, 	 v: 4545
+[0m
+[GCRAZGDL0429:18464] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[GCRAZGDL0429:18464] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+2022-04-12 03:22:04.776023: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2022-04-12 03:22:04.839178: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2022-04-12 03:22:04.857131: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2593990000 Hz
+2022-04-12 03:22:04.861375: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564ceb6cc8f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-04-12 03:22:04.861478: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2022-04-12 03:22:04.881218: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2593990000 Hz
+2022-04-12 03:22:04.885723: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55d50540e800 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-04-12 03:22:04.885826: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2022-04-12 03:22:04.967523: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2022-04-12 03:22:05.025174: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2593990000 Hz
+2022-04-12 03:22:05.043828: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55bb569d5ab0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-04-12 03:22:05.043878: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2022-04-12 03:22:05.247846: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2022-04-12 03:22:05.328385: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2593990000 Hz
+2022-04-12 03:22:05.331984: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558fdb006200 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-04-12 03:22:05.332016: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Warning: trajectory cut off by epoch at 29 steps.
+Warning: trajectory cut off by epoch at 35 steps.
+Warning: trajectory cut off by epoch at 27 steps.
+Warning: trajectory cut off by epoch at 19 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               0 |
+|      AverageEpRet |            27.4 |
+|          StdEpRet |            16.5 |
+|          MaxEpRet |              95 |
+|          MinEpRet |              10 |
+|             EpLen |            27.4 |
+|      AverageVVals |          0.0514 |
+|          StdVVals |           0.295 |
+|          MaxVVals |            1.21 |
+|          MinVVals |          -0.978 |
+| TotalEnvInteracts |           4e+03 |
+|            LossPi |        4.66e-09 |
+|             LossV |             416 |
+|       DeltaLossPi |         -0.0213 |
+|        DeltaLossV |            -218 |
+|                KL |         0.00841 |
+|    BacktrackIters |               0 |
+|              Time |            38.7 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 36 steps.
+Warning: trajectory cut off by epoch at 12 steps.
+Warning: trajectory cut off by epoch at 32 steps.
+Warning: trajectory cut off by epoch at 9 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               1 |
+|      AverageEpRet |            38.3 |
+|          StdEpRet |            27.7 |
+|          MaxEpRet |             140 |
+|          MinEpRet |               9 |
+|             EpLen |            38.3 |
+|      AverageVVals |            8.12 |
+|          StdVVals |            3.84 |
+|          MaxVVals |            14.2 |
+|          MinVVals |           -11.2 |
+| TotalEnvInteracts |           8e+03 |
+|            LossPi |       -4.47e-08 |
+|             LossV |             528 |
+|       DeltaLossPi |         -0.0285 |
+|        DeltaLossV |            -234 |
+|                KL |         0.00858 |
+|    BacktrackIters |               0 |
+|              Time |            71.9 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 136 steps.
+Warning: trajectory cut off by epoch at 77 steps.
+Warning: trajectory cut off by epoch at 54 steps.
+Warning: trajectory cut off by epoch at 8 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               2 |
+|      AverageEpRet |            64.2 |
+|          StdEpRet |            41.1 |
+|          MaxEpRet |             199 |
+|          MinEpRet |              12 |
+|             EpLen |            64.2 |
+|      AverageVVals |              20 |
+|          StdVVals |            1.46 |
+|          MaxVVals |            21.3 |
+|          MinVVals |            2.53 |
+| TotalEnvInteracts |         1.2e+04 |
+|            LossPi |       -2.79e-08 |
+|             LossV |             621 |
+|       DeltaLossPi |         -0.0211 |
+|        DeltaLossV |            -158 |
+|                KL |         0.00831 |
+|    BacktrackIters |               0 |
+|              Time |              99 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 10 steps.
+Warning: trajectory cut off by epoch at 103 steps.
+Warning: trajectory cut off by epoch at 43 steps.
+Warning: trajectory cut off by epoch at 169 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               3 |
+|      AverageEpRet |             119 |
+|          StdEpRet |              78 |
+|          MaxEpRet |             372 |
+|          MinEpRet |              21 |
+|             EpLen |             119 |
+|      AverageVVals |            27.3 |
+|          StdVVals |             2.9 |
+|          MaxVVals |            28.6 |
+|          MinVVals |            -5.6 |
+| TotalEnvInteracts |         1.6e+04 |
+|            LossPi |        4.66e-09 |
+|             LossV |        1.11e+03 |
+|       DeltaLossPi |         -0.0182 |
+|        DeltaLossV |            -318 |
+|                KL |         0.00723 |
+|    BacktrackIters |               0 |
+|              Time |             133 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 24 steps.
+Warning: trajectory cut off by epoch at 109 steps.
+Warning: trajectory cut off by epoch at 247 steps.
+Warning: trajectory cut off by epoch at 115 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               4 |
+|      AverageEpRet |             184 |
+|          StdEpRet |            34.6 |
+|          MaxEpRet |             244 |
+|          MinEpRet |             122 |
+|             EpLen |             184 |
+|      AverageVVals |            35.9 |
+|          StdVVals |            5.16 |
+|          MaxVVals |            37.4 |
+|          MinVVals |           -12.3 |
+| TotalEnvInteracts |           2e+04 |
+|            LossPi |        4.84e-08 |
+|             LossV |             944 |
+|       DeltaLossPi |         -0.0096 |
+|        DeltaLossV |            -258 |
+|                KL |          0.0049 |
+|    BacktrackIters |               0 |
+|              Time |             159 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 129 steps.
+Warning: trajectory cut off by epoch at 75 steps.
+Warning: trajectory cut off by epoch at 18 steps.
+Warning: trajectory cut off by epoch at 33 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               5 |
+|      AverageEpRet |             208 |
+|          StdEpRet |            69.4 |
+|          MaxEpRet |             335 |
+|          MinEpRet |              76 |
+|             EpLen |             208 |
+|      AverageVVals |            43.6 |
+|          StdVVals |            5.33 |
+|          MaxVVals |            44.7 |
+|          MinVVals |           -18.4 |
+| TotalEnvInteracts |         2.4e+04 |
+|            LossPi |       -1.63e-08 |
+|             LossV |             846 |
+|       DeltaLossPi |        -0.00671 |
+|        DeltaLossV |            -153 |
+|                KL |         0.00648 |
+|    BacktrackIters |               0 |
+|              Time |             193 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 63 steps.
+Warning: trajectory cut off by epoch at 102 steps.
+Warning: trajectory cut off by epoch at 50 steps.
+Warning: trajectory cut off by epoch at 8 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               6 |
+|      AverageEpRet |             199 |
+|          StdEpRet |            83.6 |
+|          MaxEpRet |             386 |
+|          MinEpRet |              45 |
+|             EpLen |             199 |
+|      AverageVVals |            49.1 |
+|          StdVVals |            5.89 |
+|          MaxVVals |            50.2 |
+|          MinVVals |           -8.37 |
+| TotalEnvInteracts |         2.8e+04 |
+|            LossPi |        1.86e-08 |
+|             LossV |             714 |
+|       DeltaLossPi |        -0.00998 |
+|        DeltaLossV |             -68 |
+|                KL |         0.00788 |
+|    BacktrackIters |               0 |
+|              Time |             215 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 120 steps.
+Warning: trajectory cut off by epoch at 410 steps.
+Warning: trajectory cut off by epoch at 29 steps.
+Warning: trajectory cut off by epoch at 317 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               7 |
+|      AverageEpRet |             260 |
+|          StdEpRet |             112 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             142 |
+|             EpLen |             260 |
+|      AverageVVals |            50.6 |
+|          StdVVals |            9.39 |
+|          MaxVVals |            54.1 |
+|          MinVVals |          -0.221 |
+| TotalEnvInteracts |         3.2e+04 |
+|            LossPi |        3.54e-08 |
+|             LossV |             827 |
+|       DeltaLossPi |         -0.0127 |
+|        DeltaLossV |            -217 |
+|                KL |         0.00705 |
+|    BacktrackIters |               0 |
+|              Time |             250 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 60 steps.
+Warning: trajectory cut off by epoch at 171 steps.
+Warning: trajectory cut off by epoch at 41 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               8 |
+|      AverageEpRet |             249 |
+|          StdEpRet |            61.6 |
+|          MaxEpRet |             384 |
+|          MinEpRet |             170 |
+|             EpLen |             249 |
+|      AverageVVals |            59.1 |
+|          StdVVals |            7.15 |
+|          MaxVVals |            60.5 |
+|          MinVVals |           -5.75 |
+| TotalEnvInteracts |         3.6e+04 |
+|            LossPi |        3.63e-08 |
+|             LossV |             597 |
+|       DeltaLossPi |         -0.0155 |
+|        DeltaLossV |           -27.1 |
+|                KL |         0.00876 |
+|    BacktrackIters |               0 |
+|              Time |             279 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 42 steps.
+Warning: trajectory cut off by epoch at 94 steps.
+Warning: trajectory cut off by epoch at 106 steps.
+Warning: trajectory cut off by epoch at 5 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |               9 |
+|      AverageEpRet |             289 |
+|          StdEpRet |            99.4 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             146 |
+|             EpLen |             289 |
+|      AverageVVals |            60.9 |
+|          StdVVals |            8.07 |
+|          MaxVVals |            62.9 |
+|          MinVVals |            2.21 |
+| TotalEnvInteracts |           4e+04 |
+|            LossPi |       -5.59e-09 |
+|             LossV |             671 |
+|       DeltaLossPi |        -0.00747 |
+|        DeltaLossV |           -55.1 |
+|                KL |         0.00941 |
+|    BacktrackIters |               0 |
+|              Time |             309 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 105 steps.
+Warning: trajectory cut off by epoch at 97 steps.
+Warning: trajectory cut off by epoch at 293 steps.
+Warning: trajectory cut off by epoch at 283 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              10 |
+|      AverageEpRet |             358 |
+|          StdEpRet |             132 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             185 |
+|             EpLen |             358 |
+|      AverageVVals |            65.5 |
+|          StdVVals |           0.025 |
+|          MaxVVals |            65.5 |
+|          MinVVals |            65.1 |
+| TotalEnvInteracts |         4.4e+04 |
+|            LossPi |       -7.45e-09 |
+|             LossV |             711 |
+|       DeltaLossPi |           -0.01 |
+|        DeltaLossV |           -69.8 |
+|                KL |         0.00761 |
+|    BacktrackIters |               0 |
+|              Time |             336 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 237 steps.
+Warning: trajectory cut off by epoch at 338 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              11 |
+|      AverageEpRet |             428 |
+|          StdEpRet |             127 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             162 |
+|             EpLen |             428 |
+|      AverageVVals |            69.5 |
+|          StdVVals |          0.0123 |
+|          MaxVVals |            69.5 |
+|          MinVVals |            69.3 |
+| TotalEnvInteracts |         4.8e+04 |
+|            LossPi |         2.1e-09 |
+|             LossV |             685 |
+|       DeltaLossPi |        -0.00647 |
+|        DeltaLossV |             -63 |
+|                KL |         0.00916 |
+|    BacktrackIters |               0 |
+|              Time |             365 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 335 steps.
+Warning: trajectory cut off by epoch at 212 steps.
+Warning: trajectory cut off by epoch at 8 steps.
+Warning: trajectory cut off by epoch at 89 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              12 |
+|      AverageEpRet |             336 |
+|          StdEpRet |             136 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             172 |
+|             EpLen |             336 |
+|      AverageVVals |            72.8 |
+|          StdVVals |             3.7 |
+|          MaxVVals |            73.4 |
+|          MinVVals |            30.8 |
+| TotalEnvInteracts |         5.2e+04 |
+|            LossPi |        9.31e-09 |
+|             LossV |             610 |
+|       DeltaLossPi |        -0.00346 |
+|        DeltaLossV |           -13.2 |
+|                KL |         0.00747 |
+|    BacktrackIters |               0 |
+|              Time |             400 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 6 steps.
+Warning: trajectory cut off by epoch at 191 steps.
+Warning: trajectory cut off by epoch at 237 steps.
+Warning: trajectory cut off by epoch at 85 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              13 |
+|      AverageEpRet |             435 |
+|          StdEpRet |            85.6 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             280 |
+|             EpLen |             435 |
+|      AverageVVals |            70.3 |
+|          StdVVals |            14.1 |
+|          MaxVVals |            74.7 |
+|          MinVVals |           -7.84 |
+| TotalEnvInteracts |         5.6e+04 |
+|            LossPi |        5.59e-09 |
+|             LossV |             428 |
+|       DeltaLossPi |        -0.00758 |
+|        DeltaLossV |           -48.9 |
+|                KL |         0.00538 |
+|    BacktrackIters |               0 |
+|              Time |             425 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 164 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              14 |
+|      AverageEpRet |             480 |
+|          StdEpRet |            54.2 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             336 |
+|             EpLen |             480 |
+|      AverageVVals |            77.9 |
+|          StdVVals |           0.734 |
+|          MaxVVals |              78 |
+|          MinVVals |            70.9 |
+| TotalEnvInteracts |           6e+04 |
+|            LossPi |       -1.92e-09 |
+|             LossV |             594 |
+|       DeltaLossPi |        -0.00737 |
+|        DeltaLossV |           -8.31 |
+|                KL |         0.00695 |
+|    BacktrackIters |               0 |
+|              Time |             451 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 70 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              15 |
+|      AverageEpRet |             491 |
+|          StdEpRet |            23.2 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             430 |
+|             EpLen |             491 |
+|      AverageVVals |              79 |
+|          StdVVals |           0.129 |
+|          MaxVVals |            79.1 |
+|          MinVVals |            77.4 |
+| TotalEnvInteracts |         6.4e+04 |
+|            LossPi |       -1.01e-08 |
+|             LossV |             593 |
+|       DeltaLossPi |        -0.00465 |
+|        DeltaLossV |           -9.31 |
+|                KL |         0.00717 |
+|    BacktrackIters |               0 |
+|              Time |             484 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 12 steps.
+Warning: trajectory cut off by epoch at 59 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              16 |
+|      AverageEpRet |             491 |
+|          StdEpRet |            19.3 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             441 |
+|             EpLen |             491 |
+|      AverageVVals |            75.6 |
+|          StdVVals |            16.4 |
+|          MaxVVals |            79.6 |
+|          MinVVals |           -56.8 |
+| TotalEnvInteracts |         6.8e+04 |
+|            LossPi |        2.79e-09 |
+|             LossV |             646 |
+|       DeltaLossPi |        -0.00765 |
+|        DeltaLossV |            -127 |
+|                KL |          0.0088 |
+|    BacktrackIters |               0 |
+|              Time |             518 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              17 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            80.5 |
+|          StdVVals |           0.723 |
+|          MaxVVals |            80.7 |
+|          MinVVals |            72.6 |
+| TotalEnvInteracts |         7.2e+04 |
+|            LossPi |        4.31e-09 |
+|             LossV |             590 |
+|       DeltaLossPi |        -0.00254 |
+|        DeltaLossV |           -25.7 |
+|                KL |         0.00798 |
+|    BacktrackIters |               0 |
+|              Time |             548 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              18 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            74.8 |
+|          StdVVals |            5.75 |
+|          MaxVVals |            81.5 |
+|          MinVVals |            55.9 |
+| TotalEnvInteracts |         7.6e+04 |
+|            LossPi |        1.02e-08 |
+|             LossV |             603 |
+|       DeltaLossPi |         -0.0042 |
+|        DeltaLossV |           -47.6 |
+|                KL |         0.00852 |
+|    BacktrackIters |               0 |
+|              Time |             583 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              19 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            80.3 |
+|          StdVVals |            3.25 |
+|          MaxVVals |            83.2 |
+|          MinVVals |            70.6 |
+| TotalEnvInteracts |           8e+04 |
+|            LossPi |        2.21e-09 |
+|             LossV |             619 |
+|       DeltaLossPi |         -0.0049 |
+|        DeltaLossV |           -20.7 |
+|                KL |         0.00739 |
+|    BacktrackIters |               0 |
+|              Time |             617 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              20 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            81.5 |
+|          StdVVals |            2.16 |
+|          MaxVVals |            82.4 |
+|          MinVVals |            68.4 |
+| TotalEnvInteracts |         8.4e+04 |
+|            LossPi |         1.4e-08 |
+|             LossV |             602 |
+|       DeltaLossPi |        -0.00231 |
+|        DeltaLossV |           -17.8 |
+|                KL |         0.00784 |
+|    BacktrackIters |               0 |
+|              Time |             652 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              21 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            81.5 |
+|          StdVVals |           0.212 |
+|          MaxVVals |            81.6 |
+|          MinVVals |            79.2 |
+| TotalEnvInteracts |         8.8e+04 |
+|            LossPi |        1.67e-09 |
+|             LossV |             601 |
+|       DeltaLossPi |        -0.00375 |
+|        DeltaLossV |           -2.23 |
+|                KL |         0.00871 |
+|    BacktrackIters |               0 |
+|              Time |             679 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 11 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              22 |
+|      AverageEpRet |             499 |
+|          StdEpRet |            3.64 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             489 |
+|             EpLen |             499 |
+|      AverageVVals |            80.3 |
+|          StdVVals |            3.37 |
+|          MaxVVals |            80.9 |
+|          MinVVals |            58.2 |
+| TotalEnvInteracts |         9.2e+04 |
+|            LossPi |       -1.91e-08 |
+|             LossV |             563 |
+|       DeltaLossPi |        -0.00322 |
+|        DeltaLossV |           -12.5 |
+|                KL |         0.00849 |
+|    BacktrackIters |               0 |
+|              Time |             704 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 207 steps.
+Warning: trajectory cut off by epoch at 405 steps.
+Warning: trajectory cut off by epoch at 165 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              23 |
+|      AverageEpRet |             403 |
+|          StdEpRet |            98.3 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             278 |
+|             EpLen |             403 |
+|      AverageVVals |            70.6 |
+|          StdVVals |            20.6 |
+|          MaxVVals |            81.2 |
+|          MinVVals |             7.2 |
+| TotalEnvInteracts |         9.6e+04 |
+|            LossPi |        7.45e-09 |
+|             LossV |             303 |
+|       DeltaLossPi |        -0.00495 |
+|        DeltaLossV |             -82 |
+|                KL |          0.0091 |
+|    BacktrackIters |               0 |
+|              Time |             732 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 293 steps.
+Warning: trajectory cut off by epoch at 92 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              24 |
+|      AverageEpRet |             452 |
+|          StdEpRet |            97.3 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             207 |
+|             EpLen |             452 |
+|      AverageVVals |            75.9 |
+|          StdVVals |              15 |
+|          MaxVVals |            84.4 |
+|          MinVVals |            12.8 |
+| TotalEnvInteracts |           1e+05 |
+|            LossPi |       -1.77e-08 |
+|             LossV |             440 |
+|       DeltaLossPi |        -0.00302 |
+|        DeltaLossV |           -83.9 |
+|                KL |         0.00585 |
+|    BacktrackIters |               0 |
+|              Time |             762 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              25 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            78.7 |
+|          StdVVals |            10.4 |
+|          MaxVVals |              87 |
+|          MinVVals |            29.8 |
+| TotalEnvInteracts |        1.04e+05 |
+|            LossPi |               0 |
+|             LossV |             457 |
+|       DeltaLossPi |        -0.00298 |
+|        DeltaLossV |           -12.4 |
+|                KL |         0.00804 |
+|    BacktrackIters |               0 |
+|              Time |             795 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              26 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            84.1 |
+|          StdVVals |            6.98 |
+|          MaxVVals |            87.9 |
+|          MinVVals |            62.6 |
+| TotalEnvInteracts |        1.08e+05 |
+|            LossPi |       -3.73e-09 |
+|             LossV |             416 |
+|       DeltaLossPi |        -0.00293 |
+|        DeltaLossV |            -126 |
+|                KL |         0.00824 |
+|    BacktrackIters |               0 |
+|              Time |             827 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              27 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            80.7 |
+|          StdVVals |              13 |
+|          MaxVVals |            88.8 |
+|          MinVVals |            28.3 |
+| TotalEnvInteracts |        1.12e+05 |
+|            LossPi |        4.66e-09 |
+|             LossV |             631 |
+|       DeltaLossPi |        -0.00901 |
+|        DeltaLossV |            -125 |
+|                KL |         0.00939 |
+|    BacktrackIters |               0 |
+|              Time |             848 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              28 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            79.7 |
+|          StdVVals |            7.27 |
+|          MaxVVals |            88.7 |
+|          MinVVals |            63.6 |
+| TotalEnvInteracts |        1.16e+05 |
+|            LossPi |        1.65e-08 |
+|             LossV |             460 |
+|       DeltaLossPi |        -0.00258 |
+|        DeltaLossV |           -19.5 |
+|                KL |         0.00785 |
+|    BacktrackIters |               0 |
+|              Time |             872 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              29 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |              80 |
+|          StdVVals |            9.99 |
+|          MaxVVals |            90.6 |
+|          MinVVals |            61.5 |
+| TotalEnvInteracts |         1.2e+05 |
+|            LossPi |       -3.73e-09 |
+|             LossV |             532 |
+|       DeltaLossPi |        -0.00132 |
+|        DeltaLossV |             -51 |
+|                KL |         0.00788 |
+|    BacktrackIters |               0 |
+|              Time |             909 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              30 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            77.3 |
+|          StdVVals |            9.87 |
+|          MaxVVals |            92.8 |
+|          MinVVals |            60.2 |
+| TotalEnvInteracts |        1.24e+05 |
+|            LossPi |        3.26e-09 |
+|             LossV |             495 |
+|       DeltaLossPi |         -0.0049 |
+|        DeltaLossV |           -16.9 |
+|                KL |         0.00936 |
+|    BacktrackIters |               0 |
+|              Time |             951 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              31 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            84.1 |
+|          StdVVals |            9.48 |
+|          MaxVVals |            94.4 |
+|          MinVVals |            67.9 |
+| TotalEnvInteracts |        1.28e+05 |
+|            LossPi |       -4.66e-10 |
+|             LossV |             629 |
+|       DeltaLossPi |        -0.00521 |
+|        DeltaLossV |           -65.6 |
+|                KL |         0.00921 |
+|    BacktrackIters |               0 |
+|              Time |             992 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              32 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            85.2 |
+|          StdVVals |            6.75 |
+|          MaxVVals |            93.8 |
+|          MinVVals |            71.1 |
+| TotalEnvInteracts |        1.32e+05 |
+|            LossPi |        1.26e-08 |
+|             LossV |             692 |
+|       DeltaLossPi |        -0.00341 |
+|        DeltaLossV |            -108 |
+|                KL |         0.00854 |
+|    BacktrackIters |               0 |
+|              Time |        1.03e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              33 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            82.2 |
+|          StdVVals |           0.655 |
+|          MaxVVals |              83 |
+|          MinVVals |            77.7 |
+| TotalEnvInteracts |        1.36e+05 |
+|            LossPi |       -4.66e-09 |
+|             LossV |             601 |
+|       DeltaLossPi |        -0.00301 |
+|        DeltaLossV |           -8.93 |
+|                KL |         0.00827 |
+|    BacktrackIters |               0 |
+|              Time |        1.06e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              34 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            80.6 |
+|          StdVVals |            2.12 |
+|          MaxVVals |              85 |
+|          MinVVals |            67.5 |
+| TotalEnvInteracts |         1.4e+05 |
+|            LossPi |        4.66e-09 |
+|             LossV |             571 |
+|       DeltaLossPi |        -0.00449 |
+|        DeltaLossV |            -114 |
+|                KL |          0.0077 |
+|    BacktrackIters |               0 |
+|              Time |        1.09e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              35 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            79.6 |
+|          StdVVals |            5.08 |
+|          MaxVVals |              82 |
+|          MinVVals |            39.3 |
+| TotalEnvInteracts |        1.44e+05 |
+|            LossPi |        2.79e-09 |
+|             LossV |             522 |
+|       DeltaLossPi |        -0.00513 |
+|        DeltaLossV |           -35.8 |
+|                KL |         0.00816 |
+|    BacktrackIters |               0 |
+|              Time |        1.11e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              36 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            80.9 |
+|          StdVVals |            6.35 |
+|          MaxVVals |              84 |
+|          MinVVals |              38 |
+| TotalEnvInteracts |        1.48e+05 |
+|            LossPi |        -1.4e-09 |
+|             LossV |             578 |
+|       DeltaLossPi |        -0.00562 |
+|        DeltaLossV |           -11.7 |
+|                KL |         0.00901 |
+|    BacktrackIters |               0 |
+|              Time |        1.15e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              37 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            75.6 |
+|          StdVVals |            15.5 |
+|          MaxVVals |            82.6 |
+|          MinVVals |           -10.9 |
+| TotalEnvInteracts |        1.52e+05 |
+|            LossPi |       -1.12e-08 |
+|             LossV |             542 |
+|       DeltaLossPi |        -0.00578 |
+|        DeltaLossV |           -66.2 |
+|                KL |         0.00862 |
+|    BacktrackIters |               0 |
+|              Time |        1.17e+03 |
+---------------------------------------
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              38 |
+|      AverageEpRet |             500 |
+|          StdEpRet |               0 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             500 |
+|             EpLen |             500 |
+|      AverageVVals |            73.8 |
+|          StdVVals |            18.3 |
+|          MaxVVals |              84 |
+|          MinVVals |            8.24 |
+| TotalEnvInteracts |        1.56e+05 |
+|            LossPi |       -3.73e-09 |
+|             LossV |             413 |
+|       DeltaLossPi |        -0.00391 |
+|        DeltaLossV |            -105 |
+|                KL |          0.0089 |
+|    BacktrackIters |               0 |
+|              Time |         1.2e+03 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 88 steps.
+Warning: trajectory cut off by epoch at 294 steps.
+Warning: trajectory cut off by epoch at 81 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              39 |
+|      AverageEpRet |             442 |
+|          StdEpRet |            62.6 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             335 |
+|             EpLen |             442 |
+|      AverageVVals |            76.9 |
+|          StdVVals |            24.3 |
+|          MaxVVals |            91.3 |
+|          MinVVals |           -45.8 |
+| TotalEnvInteracts |         1.6e+05 |
+|            LossPi |       -4.66e-09 |
+|             LossV |             475 |
+|       DeltaLossPi |        -0.00654 |
+|        DeltaLossV |            -166 |
+|                KL |         0.00606 |
+|    BacktrackIters |               0 |
+|              Time |        1.22e+03 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 23 steps.
+Warning: trajectory cut off by epoch at 88 steps.
+Warning: trajectory cut off by epoch at 353 steps.
+Warning: trajectory cut off by epoch at 184 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              40 |
+|      AverageEpRet |             305 |
+|          StdEpRet |             116 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             175 |
+|             EpLen |             305 |
+|      AverageVVals |              83 |
+|          StdVVals |            9.52 |
+|          MaxVVals |            90.2 |
+|          MinVVals |            16.5 |
+| TotalEnvInteracts |        1.64e+05 |
+|            LossPi |       -3.73e-09 |
+|             LossV |             529 |
+|       DeltaLossPi |        -0.00419 |
+|        DeltaLossV |            -271 |
+|                KL |         0.00607 |
+|    BacktrackIters |               0 |
+|              Time |        1.25e+03 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 387 steps.
+Warning: trajectory cut off by epoch at 176 steps.
+Warning: trajectory cut off by epoch at 368 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              41 |
+|      AverageEpRet |             384 |
+|          StdEpRet |            92.3 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             273 |
+|             EpLen |             384 |
+|      AverageVVals |              78 |
+|          StdVVals |            13.7 |
+|          MaxVVals |            85.1 |
+|          MinVVals |           0.443 |
+| TotalEnvInteracts |        1.68e+05 |
+|            LossPi |        5.59e-09 |
+|             LossV |             306 |
+|       DeltaLossPi |        -0.00342 |
+|        DeltaLossV |            -111 |
+|                KL |         0.00589 |
+|    BacktrackIters |               0 |
+|              Time |        1.27e+03 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 279 steps.
+Warning: trajectory cut off by epoch at 10 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              42 |
+|      AverageEpRet |             464 |
+|          StdEpRet |            60.2 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             347 |
+|             EpLen |             464 |
+|      AverageVVals |              79 |
+|          StdVVals |              14 |
+|          MaxVVals |            88.4 |
+|          MinVVals |            7.55 |
+| TotalEnvInteracts |        1.72e+05 |
+|            LossPi |       -3.73e-09 |
+|             LossV |             374 |
+|       DeltaLossPi |        -0.00512 |
+|        DeltaLossV |           -85.7 |
+|                KL |         0.00787 |
+|    BacktrackIters |               0 |
+|              Time |        1.29e+03 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 32 steps.
+Warning: trajectory cut off by epoch at 79 steps.
+Warning: trajectory cut off by epoch at 61 steps.
+Warning: trajectory cut off by epoch at 257 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              43 |
+|      AverageEpRet |             325 |
+|          StdEpRet |             134 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             197 |
+|             EpLen |             325 |
+|      AverageVVals |              73 |
+|          StdVVals |            20.6 |
+|          MaxVVals |            89.5 |
+|          MinVVals |           -5.54 |
+| TotalEnvInteracts |        1.76e+05 |
+|            LossPi |       -7.45e-09 |
+|             LossV |             380 |
+|       DeltaLossPi |        -0.00597 |
+|        DeltaLossV |            -143 |
+|                KL |         0.00864 |
+|    BacktrackIters |               0 |
+|              Time |        1.32e+03 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 207 steps.
+Warning: trajectory cut off by epoch at 20 steps.
+Warning: trajectory cut off by epoch at 121 steps.
+Warning: trajectory cut off by epoch at 81 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              44 |
+|      AverageEpRet |             446 |
+|          StdEpRet |            69.1 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             293 |
+|             EpLen |             446 |
+|      AverageVVals |            73.3 |
+|          StdVVals |              19 |
+|          MaxVVals |              88 |
+|          MinVVals |            3.38 |
+| TotalEnvInteracts |         1.8e+05 |
+|            LossPi |        1.02e-08 |
+|             LossV |             229 |
+|       DeltaLossPi |        -0.00416 |
+|        DeltaLossV |            -124 |
+|                KL |         0.00599 |
+|    BacktrackIters |               0 |
+|              Time |        1.34e+03 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 85 steps.
+Warning: trajectory cut off by epoch at 260 steps.
+Warning: trajectory cut off by epoch at 310 steps.
+Warning: trajectory cut off by epoch at 259 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              45 |
+|      AverageEpRet |             343 |
+|          StdEpRet |             108 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             190 |
+|             EpLen |             343 |
+|      AverageVVals |            80.5 |
+|          StdVVals |            21.1 |
+|          MaxVVals |            92.8 |
+|          MinVVals |            9.32 |
+| TotalEnvInteracts |        1.84e+05 |
+|            LossPi |       -1.86e-09 |
+|             LossV |             203 |
+|       DeltaLossPi |        -0.00553 |
+|        DeltaLossV |           -37.9 |
+|                KL |         0.00519 |
+|    BacktrackIters |               0 |
+|              Time |        1.37e+03 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 11 steps.
+Warning: trajectory cut off by epoch at 326 steps.
+Warning: trajectory cut off by epoch at 86 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              46 |
+|      AverageEpRet |             397 |
+|          StdEpRet |            91.5 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             241 |
+|             EpLen |             397 |
+|      AverageVVals |            75.6 |
+|          StdVVals |            22.4 |
+|          MaxVVals |            91.8 |
+|          MinVVals |            5.16 |
+| TotalEnvInteracts |        1.88e+05 |
+|            LossPi |       -1.86e-09 |
+|             LossV |             169 |
+|       DeltaLossPi |        -0.00457 |
+|        DeltaLossV |           -22.7 |
+|                KL |         0.00891 |
+|    BacktrackIters |               0 |
+|              Time |         1.4e+03 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 4 steps.
+Warning: trajectory cut off by epoch at 215 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              47 |
+|      AverageEpRet |             473 |
+|          StdEpRet |            70.9 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             285 |
+|             EpLen |             473 |
+|      AverageVVals |            82.1 |
+|          StdVVals |            9.73 |
+|          MaxVVals |            91.6 |
+|          MinVVals |            3.63 |
+| TotalEnvInteracts |        1.92e+05 |
+|            LossPi |        1.75e-09 |
+|             LossV |             406 |
+|       DeltaLossPi |         -0.0032 |
+|        DeltaLossV |            -179 |
+|                KL |         0.00622 |
+|    BacktrackIters |               0 |
+|              Time |        1.41e+03 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 251 steps.
+Warning: trajectory cut off by epoch at 329 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              48 |
+|      AverageEpRet |             428 |
+|          StdEpRet |             104 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             249 |
+|             EpLen |             428 |
+|      AverageVVals |            84.6 |
+|          StdVVals |            11.9 |
+|          MaxVVals |            94.2 |
+|          MinVVals |            50.4 |
+| TotalEnvInteracts |        1.96e+05 |
+|            LossPi |       -1.86e-09 |
+|             LossV |             353 |
+|       DeltaLossPi |        -0.00738 |
+|        DeltaLossV |            -111 |
+|                KL |         0.00435 |
+|    BacktrackIters |               0 |
+|              Time |        1.43e+03 |
+---------------------------------------
+Warning: trajectory cut off by epoch at 131 steps.
+Warning: trajectory cut off by epoch at 52 steps.
+Warning: trajectory cut off by epoch at 9 steps.
+Warning: trajectory cut off by epoch at 430 steps.
+[32;1mAccepting new params at step 0 of line search.[0m
+---------------------------------------
+|             Epoch |              49 |
+|      AverageEpRet |             375 |
+|          StdEpRet |             102 |
+|          MaxEpRet |             500 |
+|          MinEpRet |             201 |
+|             EpLen |             375 |
+|      AverageVVals |            70.1 |
+|          StdVVals |            19.6 |
+|          MaxVVals |            93.7 |
+|          MinVVals |            18.5 |
+| TotalEnvInteracts |           2e+05 |
+|            LossPi |       -1.68e-08 |
+|             LossV |             241 |
+|       DeltaLossPi |        -0.00191 |
+|        DeltaLossV |            -110 |
+|                KL |         0.00794 |
+|    BacktrackIters |               0 |
+|              Time |        1.46e+03 |
+---------------------------------------

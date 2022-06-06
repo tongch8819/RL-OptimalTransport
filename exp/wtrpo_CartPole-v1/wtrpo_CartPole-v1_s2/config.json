@@ -1,0 +1,45 @@
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            64,
+            64
+        ]
+    },
+    "actor_critic":	"mlp_actor_critic",
+    "algo":	"trpo",
+    "backtrack_coeff":	0.8,
+    "backtrack_iters":	10,
+    "cg_iters":	10,
+    "damping_coeff":	0.1,
+    "delta":	0.01,
+    "env_fn":	"<function <lambda> at 0x7fe90a711290>",
+    "epochs":	50,
+    "exp_name":	"wtrpo_CartPole-v1",
+    "gamma":	0.99,
+    "lam":	0.97,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7fe90a6b2a90>":	{
+            "epoch_dict":	{},
+            "exp_name":	"wtrpo_CartPole-v1",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"exp/wtrpo_CartPole-v1/wtrpo_CartPole-v1_s2",
+            "output_file":	{
+                "<_io.TextIOWrapper name='exp/wtrpo_CartPole-v1/wtrpo_CartPole-v1_s2/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"wtrpo_CartPole-v1",
+        "output_dir":	"exp/wtrpo_CartPole-v1/wtrpo_CartPole-v1_s2"
+    },
+    "max_ep_len":	1000,
+    "save_freq":	10,
+    "seed":	2,
+    "steps_per_epoch":	4000,
+    "train_v_iters":	80,
+    "vf_lr":	0.001
+}
